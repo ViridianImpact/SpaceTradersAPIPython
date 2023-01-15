@@ -10,6 +10,7 @@ import requests
 import json
 from Account_Check import account_check
 
+#my personal token
 token = '4b0325e4-e972-4a4d-b67f-5cdd87d62f67'
 
 def play_game():

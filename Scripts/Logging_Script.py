@@ -1,12 +1,11 @@
 #B0undle55
-#Logging Script.py
+#Logging_Script.py
 #Creates an append to the end of the persistent log provided by the arguments
 #
 #
 #
 
 import json
-import requests
 
 def log_response(response, filename):
     """
