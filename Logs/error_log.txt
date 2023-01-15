@@ -1,0 +1,3 @@
+{"error": {"message": "Marketplace listings are only visible to docked ships at this location.", "code": 2005}}
+{"error": {"message": "Marketplace listings are only visible to docked ships at this location.", "code": 2005}}
+{"error": {"message": "Only one loan allowed at a time.", "code": 422}}
