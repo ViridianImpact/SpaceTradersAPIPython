@@ -1,6 +1,0 @@
-{"loans": [{"type": "STARTUP", "amount": 200000, "rate": 40, "termInDays": 2, "collateralRequired": false}]}
-{"loans": [{"type": "STARTUP", "amount": 200000, "rate": 40, "termInDays": 2, "collateralRequired": false}]}
-{"loans": [{"type": "STARTUP", "amount": 200000, "rate": 40, "termInDays": 2, "collateralRequired": false}]}
-{"loans": [{"type": "STARTUP", "amount": 200000, "rate": 40, "termInDays": 2, "collateralRequired": false}]}
-{"loans": [{"type": "STARTUP", "amount": 200000, "rate": 40, "termInDays": 2, "collateralRequired": false}]}
-{"loans": [{"type": "STARTUP", "amount": 200000, "rate": 40, "termInDays": 2, "collateralRequired": false}]}

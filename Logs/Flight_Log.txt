@@ -1,1 +1,0 @@
-{"flightPlan": {"id": "clcwsxa6y108894215s6lnj3ggao", "shipId": "clcwsbzgc107055215s63c83vr0d", "createdAt": "2023-01-15T03:12:13.787Z", "arrivesAt": "2023-01-15T03:12:49.781Z", "destination": "OE-PM", "departure": "OE-PM-TR", "distance": 2, "fuelConsumed": 1, "fuelRemaining": 19, "terminatedAt": "2023-01-15T03:12:45.769Z", "timeRemainingInSeconds": 0}}
