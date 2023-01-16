@@ -25,9 +25,11 @@ def account_check(token):
     #if the status code is good print the payload to console and record the account log, otherwise, print the error and record the error log
     if response.status_code == 200:
         print(response.json())
+        print('\n')
         log_response(response, 'Account_Log.txt')
         #return None
     else:
         print('Error:', response.status_code, response.reason)
+        print('\n')
         log_response(response, 'error_log.txt')
         #return None

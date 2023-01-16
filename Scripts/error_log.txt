@@ -1,0 +1,4 @@
+{"error": {"message": "The payload was invalid. Please check the error details to correct your payload and try again.", "code": 42201, "data": {"good": ["Planet type does not exist."]}}}
+{"error": {"message": "This route does not exist. Did you type the route correctly? Most route resources are plural except for \"/game/\", \"/game/status\" and \"/users/:username/token\"", "code": 404}}
+{"error": {"message": "This route does not exist. Did you type the route correctly? Most route resources are plural except for \"/game/\", \"/game/status\" and \"/users/:username/token\"", "code": 404}}
+{"error": {"message": "System does not exist or cannot be reached.", "code": 404}}
