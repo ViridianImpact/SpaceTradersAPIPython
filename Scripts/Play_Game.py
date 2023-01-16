@@ -25,19 +25,25 @@ from Ships_Type_Check import ships_type_check
 from Username_Claim import username_claim
 '''
 
-#my personal token
-token = '4b0325e4-e972-4a4d-b67f-5cdd87d62f67'
-shipID = 'clcwsbzgc107055215s63c83vr0d'
+#load personal token
+token = input('What is your Account ID?: ')
+shipID = ' '
 
+#check game status
 status_check()
 
+#intro
 print('Welcome to SpaceTraders')
 print('\n')
 
+#current location reminder
 my_location(token)
 print('\n')
 
+#game loop
 def play_game():
+    
+    #menu
     while True:
         print('1 - Check your account')
         print('2 - Search nearby planets')
@@ -51,11 +57,14 @@ def play_game():
         choice = input('Enter the number for the menu item you wish to select (q to quit): ')
         print('\n')
         
+        #switch
         if choice == 'q' or choice < '0' :
             print('goodbye!')
             break
         elif choice == '1':
             account_check(token)
+            print('\n')
+            
         elif choice == '2':
             option = input('What type are you looking to filter on (type PLANETS or MOON): ')
             print('\n')
@@ -63,35 +72,47 @@ def play_game():
             print('\n')
             location_check(token, option, location)
             print('\n')
+            
         elif choice == '3':
             location = input('What system do you want to search in?: ')
             print('\n')
             marketplace_check(token, location)
             print('\n')
+            
         elif choice == '4':
+            shipID = input('What is your Ship ID?: ')
+            print('\n')
             good = input('What good are you looking to purchase?: ')
             print('\n')
             quantity = input('How many?: ')
             print('\n')
             purchase(token, shipID, good, quantity)
             print('\n')
+            
         elif choice == '5':
+            shipID = input('What is your Ship ID?: ')
+            print('\n')
             destination = input('Where would you like to fly?: ')
             print('\n')
             flight_plans_choice(token, shipID, destination)
             print('\n')
+            
         elif choice == '6':
             flightID = input('What is the Flight ID?: ')
             print('\n')
             flight_plan_check(token, flightID)
             print('\n')
+            
         elif choice == '7':
+            shipID = input('What is your Ship ID?: ')
+            print('\n')
             good = input('What good are you looking to sell?: ')
             print('\n')
             quantity = input('How many?: ')
             print('\n')
             sale(token, shipID, good, quantity)
             print('\n')
+            
         elif choice == '9':
             print('\n')
             my_location(token)
