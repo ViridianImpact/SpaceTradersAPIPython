@@ -31,7 +31,7 @@ def purchase(token, shipID, good, quantity):
     response = requests.post(url, json=data, headers=headers)
 
     #if the status code is good print the payload to console and record the purchase log, otherwise, print the error and record the error log
-    if response.status_code == 200:
+    if response.status_code == 200 or response.status_code == 201:
         print(response.json())
         log_response(response, 'Purchase_Log.txt')
     else:

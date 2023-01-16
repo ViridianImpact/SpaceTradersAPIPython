@@ -2,3 +2,5 @@
 {"error": {"message": "This route does not exist. Did you type the route correctly? Most route resources are plural except for \"/game/\", \"/game/status\" and \"/users/:username/token\"", "code": 404}}
 {"error": {"message": "This route does not exist. Did you type the route correctly? Most route resources are plural except for \"/game/\", \"/game/status\" and \"/users/:username/token\"", "code": 404}}
 {"error": {"message": "System does not exist or cannot be reached.", "code": 404}}
+{"credits": 178265, "order": {"good": "METALS", "quantity": 25, "pricePerUnit": 31, "total": 775}, "ship": {"id": "clcwsbzgc107055215s63c83vr0d", "location": "OE-PM", "x": -19, "y": 3, "cargo": [{"good": "METALS", "quantity": 25, "totalVolume": 25}, {"good": "FUEL", "quantity": 19, "totalVolume": 19}], "spaceAvailable": 6, "type": "JW-MK-I", "class": "MK-I", "maxCargo": 50, "loadingSpeed": 25, "speed": 1, "manufacturer": "Jackshaw", "plating": 5, "weapons": 5}}
+{"error": {"message": "System does not exist or cannot be reached.", "code": 404}}

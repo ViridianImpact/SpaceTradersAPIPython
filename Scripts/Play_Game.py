@@ -72,6 +72,7 @@ def play_game():
             quantity = input('How many?: ')
             print('\n')
             purchase(token, shipID, good, quantity)
+            print('\n')
         elif choice == '9':
             print('\n')
             my_location(token)
