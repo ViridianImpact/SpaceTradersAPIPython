@@ -8,22 +8,20 @@
 #importing the functions \\\thinking about migrating to one project at some point
 import requests
 import json
+from Status_Check import status_check
 from Account_Check import account_check
 from Location_Check import location_check
 from My_Location import my_location
 from Purchase_Script import purchase
 from Marketplace_Check import marketplace_check
-'''
-from Sale_script import sale
+from Sale_Script import sale
 from Flight_Plan_Check import flight_plan_check
 from Flight_Plans_Choice import flight_plans_choice
+'''
 from Loan_Choice import loan_choice
 from Loan_Type_Check import loan_type_check
 from Ship_Choice import ship_choice
 from Ships_Type_Check import ships_type_check
-'''
-from Status_Check import status_check
-'''
 from Username_Claim import username_claim
 '''
 
@@ -44,10 +42,14 @@ def play_game():
         print('1 - Check your account')
         print('2 - Search nearby planets')
         print('3 - Check the marketplace')
-        print('4 - Make a Purchase')
-        print('9 - Check Current Locations')
+        print('4 - Make a purchase')
+        print('5 - Create a flight plan')
+        print('6 - Check a flight plan')
+        print('7 - Make a sale')
+        print('9 - Check current locations')
         print('\n')
         choice = input('Enter the number for the menu item you wish to select (q to quit): ')
+        print('\n')
         
         if choice == 'q' or choice < '0' :
             print('goodbye!')
@@ -72,6 +74,23 @@ def play_game():
             quantity = input('How many?: ')
             print('\n')
             purchase(token, shipID, good, quantity)
+            print('\n')
+        elif choice == '5':
+            destination = input('Where would you like to fly?: ')
+            print('\n')
+            flight_plans_choice(token, shipID, destination)
+            print('\n')
+        elif choice == '6':
+            flightID = input('What is the Flight ID?: ')
+            print('\n')
+            flight_plan_check(token, flightID)
+            print('\n')
+        elif choice == '7':
+            good = input('What good are you looking to sell?: ')
+            print('\n')
+            quantity = input('How many?: ')
+            print('\n')
+            sale(token, shipID, good, quantity)
             print('\n')
         elif choice == '9':
             print('\n')
