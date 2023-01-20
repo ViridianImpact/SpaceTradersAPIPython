@@ -22,7 +22,7 @@ def flight_plan_check(token, flightID):
     #sending a get request and recording the response payload to the variable response
     response = requests.get(url, headers=headers)
 
-    #if the status code is good print the payload to console and record the flights log, otherwise, print the error and record the error log
+    #if the status code is good print the payload to console and record the flight log, otherwise, print the error and record the error log
     if response.status_code > 199 and response.status_code < 300:
         print(response.json())
         log_response(response, 'Flight_Log.txt')

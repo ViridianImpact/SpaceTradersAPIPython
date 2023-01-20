@@ -10,9 +10,6 @@ from Logging_Script import log_response
 
 def marketplace_check(token, location):
 
-    #my unique token
-    token = '4b0325e4-e972-4a4d-b67f-5cdd87d62f67'
-
     #specific url for the marketplace requested 'https://api.spacetraders.io/locations/XX-XX-XX/marketplace'
     url = 'https://api.spacetraders.io/locations/' + location + '/marketplace'
 
@@ -26,7 +23,7 @@ def marketplace_check(token, location):
     response = requests.get(url, headers=headers)
 
     #if the status code is good print the payload to console and record the marketplace log, otherwise, print the error and record the error log
-    if response.status_code == 200:
+    if response.status_code > 199 and response.status_code < 300:
         print(response.json())
         log_response(response, 'Marketplace_Log.txt')    
     else:

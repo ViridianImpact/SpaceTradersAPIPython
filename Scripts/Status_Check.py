@@ -17,7 +17,7 @@ def status_check():
     response = requests.get(url)
 
     #if the status code is good print the payload to console and record the game log, otherwise, print the error and record the error log
-    if response.status_code == 200:
+    if response.status_code > 199 and response.status_code < 300:
         print(response.json())
         log_response(response, 'Game_Log.txt')
     else:

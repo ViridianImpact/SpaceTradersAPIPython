@@ -1,5 +1,5 @@
 #B0undle55
-#25_METALS_Purchase.py
+#Sale_Script.py
 #Sends a POST request to the URL https://api.spacetraders.io/my/purchase-orders to submit a purchase order for 25 Units of METAL
 #
 #

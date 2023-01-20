@@ -27,7 +27,7 @@ def location_check(token, choice, location):
     response = requests.get(url, headers=headers, params=data)
 
     #if the status code is good print the payload to console and record the system log, otherwise, print the error and record the error log
-    if response.status_code == 200:
+    if response.status_code > 199 and response.status_code < 300:
         print(response.json())
         log_response(response, 'System_Log.txt')
     else:
